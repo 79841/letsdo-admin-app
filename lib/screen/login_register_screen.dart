@@ -241,6 +241,37 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
+  Widget _changeLoginMode(BuildContext context) {
+    return SizedBox(
+      width: LoginScreenStyle.boxWidth,
+      height: LoginScreenStyle.boxHeight,
+      child: ElevatedButton(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(mainBlue),
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+          ),
+        ),
+        onPressed: () {
+          setState(
+            () {
+              isLogin = true;
+            },
+          );
+        },
+        child: const Text(
+          '로그인',
+          style: TextStyle(
+            fontSize: LoginScreenStyle.buttonFontSize,
+            fontWeight: LoginScreenStyle.buttonFontWeight,
+          ),
+        ),
+      ),
+    );
+  }
+
   Widget _registerMode(BuildContext context) {
     return SizedBox(
       width: LoginScreenStyle.boxWidth,
@@ -285,6 +316,8 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           hspace(LoginScreenStyle.bottomMargin),
           _registerButton(context),
+          hspace(LoginScreenStyle.bottomMargin),
+          _changeLoginMode(context),
         ],
       ),
     );

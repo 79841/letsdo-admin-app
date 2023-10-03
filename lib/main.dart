@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ksica/config/style.dart';
 import 'package:ksica/provider/auth.dart';
 import 'package:ksica/provider/chatroom.dart';
 import 'package:ksica/provider/check_list.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.blue,
+        primaryColor: darkBlue,
         unselectedWidgetColor: Colors.white,
       ),
       home: const WidgetTree(),

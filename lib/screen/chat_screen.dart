@@ -40,11 +40,6 @@ class _ChatScreenState extends State<ChatScreen> {
   void _scrollToBottom() {
     if (scrollController.hasClients) {
       scrollController.jumpTo(scrollController.position.maxScrollExtent);
-      // scrollController.animateTo(
-      //   scrollController.position.maxScrollExtent,
-      //   duration: const Duration(milliseconds: 100),
-      //   curve: Curves.easeOut,
-      // );
     }
   }
 

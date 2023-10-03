@@ -33,6 +33,20 @@ class MessageBoxes extends StatefulWidget {
 }
 
 class MessageBoxesState extends State<MessageBoxes> {
+  bool showMessages = false;
+
+  void scrollToBottomAndShowMessages() {
+    if (showMessages) {
+      return;
+    }
+    widget.scrollToBottom();
+    Timer(const Duration(milliseconds: 200), () {
+      setState(() {
+        showMessages = true;
+      });
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -50,7 +64,9 @@ class MessageBoxesState extends State<MessageBoxes> {
         builder: (context, snapshot) {
           Uint8List? opponentProfileImage = snapshot.data;
 
-          return ListView.builder(
+          ListView messages = ListView.builder(
+            // reverse: true,
+            shrinkWrap: true,
             controller: widget.scrollController,
             itemCount: widget.messages.length,
             itemBuilder: (BuildContext context, int index) {
@@ -107,6 +123,8 @@ class MessageBoxesState extends State<MessageBoxes> {
               );
             },
           );
+          scrollToBottomAndShowMessages();
+          return showMessages ? messages : const CircularProgressIndicator();
         },
       ),
     );
