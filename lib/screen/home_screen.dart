@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // late IOWebSocketChannel channel;
   // bool isConnected = false;
   // String? token = await storage.read(key: "Authorization");
-  late ChatroomWebSocketManager webSocketManager;
+  ChatroomWebSocketManager? webSocketManager;
 
   // Future<void> signOut(BuildContext context, VoidCallback onSuccess) async {
   //   if (!context.mounted) {
@@ -48,10 +48,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void dispose() {
-    print("home dispose");
     // channel.sink.close();
     // isConnected = false;
-    webSocketManager.closeWebSocket();
+    if (webSocketManager != null) {
+      webSocketManager!.closeWebSocket();
+    }
     super.dispose();
   }
 
@@ -70,7 +71,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("home build");
     return MainLayout(
       currentScreen: HOME_SCREEN,
       child: FutureBuilder<dynamic>(
@@ -113,10 +113,10 @@ class _HomeScreenState extends State<HomeScreen> {
               return Consumer<ChatroomWebSocketManager>(
                   builder: (context, chatroomWebSocketManager, child) {
                 webSocketManager = chatroomWebSocketManager;
-                webSocketManager.connectWebSocket(
+                webSocketManager!.connectWebSocket(
                     "$WEBSOCKET_SERVER_URL/admin/message/unread/count/all/ws/?token=${auth.token}");
                 return StreamBuilder(
-                  stream: webSocketManager.channel.stream,
+                  stream: webSocketManager!.channel.stream,
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       unreadMessageCounts = json.decode(snapshot.data)[0];

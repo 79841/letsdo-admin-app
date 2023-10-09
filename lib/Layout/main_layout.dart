@@ -47,7 +47,6 @@ class _MainLayoutState extends State<MainLayout> {
       Provider.of<UserInfo>(context, listen: false).removeUserData();
       Navigator.of(context).popUntil((route) => route.isFirst);
     }
-
     onSuccess.call();
   }
 
@@ -96,12 +95,15 @@ class _MainLayoutState extends State<MainLayout> {
                       child: const Text(
                         "KSCIA",
                         style: TextStyle(
-                            fontSize: MainLayoutStyle.drawerHeaderFontSize,
-                            fontWeight: MainLayoutStyle.drawerHeaderFontWeight),
+                          fontSize: MainLayoutStyle.drawerHeaderFontSize,
+                          fontWeight: MainLayoutStyle.drawerHeaderFontWeight,
+                        ),
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => goToProfile(context),
+                      onTap: () => goToProfile(context, () {
+                        setState(() {});
+                      }),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
