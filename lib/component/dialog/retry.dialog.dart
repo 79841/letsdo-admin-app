@@ -3,19 +3,20 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 import 'package:ksica/config/style.dart';
+import 'package:ksica/provider/chatroom.dart';
 import 'package:ksica/query/message.dart';
 import 'package:provider/provider.dart';
 import 'package:web_socket_channel/io.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
-import '../Layout/sub_layout.dart';
-import '../component/chat/message.dart';
-import '../config.dart';
-import '../provider/auth.dart';
-import '../query/chatroom.dart';
+
+import '../../Layout/sub_layout.dart';
+import '../../config.dart';
+import '../../provider/auth.dart';
+import '../../query/chatroom.dart';
+import '../chat/message.dart';
 
 class ChatScreen extends StatefulWidget {
-  final int chatroomId;
-  const ChatScreen({required this.chatroomId, super.key});
+  const ChatScreen({super.key});
 
   @override
   _ChatScreenState createState() => _ChatScreenState();
@@ -59,7 +60,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  Future<List<dynamic>> _fetchData(chatroomId) async {
+  Future<List<dynamic>> fetchData(chatroomId) async {
     dynamic messages = await fetchMessages(chatroomId);
     dynamic opponent = await fetchOpponent(chatroomId);
     return [messages, opponent];
@@ -73,19 +74,17 @@ class _ChatScreenState extends State<ChatScreen> {
         color: lightBlue,
         child: Consumer<Auth>(
           builder: (context, auth, child) {
-            // int chatroomId =
-            //     Provider.of<Chatroom>(context, listen: true).chatroomId!;
-            int chatroomId = widget.chatroomId;
-
+            int chatroomId =
+                Provider.of<Chatroom>(context, listen: true).chatroomId!;
             return FutureBuilder(
-              future: _fetchData(chatroomId),
+              future: fetchData(chatroomId),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   List<Map<String, dynamic>> messages =
                       snapshot.data?[0].toList() ?? [];
                   messages0.addAll(messages);
                 }
-                int? opponentId = snapshot.data?[1]?["user_id"];
+                int? opponentId = snapshot.data?[1]?["opponent_id"];
                 channel = IOWebSocketChannel.connect(
                   Uri.parse(
                       '$WEBSOCKET_SERVER_URL/message/ws/$chatroomId?token=${auth.token}'),

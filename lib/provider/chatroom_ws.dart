@@ -28,7 +28,7 @@ class ChatroomWebSocketManager extends ChangeNotifier {
     _channel.sink.close();
     _connectionStatus = WebSocketConnectionStatus.disconnected;
     print("WebSocket disconnected");
-    notifyListeners();
+    // notifyListeners();
   }
 
   Future<void> connectWebSocket(String url) async {
@@ -60,6 +60,7 @@ class ChatroomWebSocketManager extends ChangeNotifier {
       _connectionStatus = WebSocketConnectionStatus.connected;
     }
     print("WebSocket connected");
-    notifyListeners();
+
+    // notifyListeners();
   }
 }

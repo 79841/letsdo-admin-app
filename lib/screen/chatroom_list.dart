@@ -1,13 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:ksica/Layout/main_layout.dart';
 import 'package:ksica/config/const.dart';
 import 'package:ksica/provider/chatroom_ws.dart';
 import 'package:ksica/query/chatroom.dart';
 import 'package:provider/provider.dart';
-
 import '../component/chat/message_preview.dart';
 import '../config.dart';
 import '../provider/auth.dart';
@@ -28,7 +26,11 @@ class _ChatroomListState extends State<ChatroomList> {
 
   @override
   void dispose() {
-    webSocketManager.closeWebSocket();
+    try {
+      webSocketManager.closeWebSocket();
+    } catch (e) {
+      print("channel has not bee initialized");
+    }
     _controller.dispose();
     super.dispose();
   }

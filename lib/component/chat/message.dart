@@ -39,8 +39,8 @@ class MessageBoxesState extends State<MessageBoxes> {
     if (showMessages) {
       return;
     }
-    widget.scrollToBottom();
     Timer(const Duration(milliseconds: 200), () {
+      widget.scrollToBottom();
       setState(() {
         showMessages = true;
       });
@@ -54,9 +54,9 @@ class MessageBoxesState extends State<MessageBoxes> {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      Timer(const Duration(milliseconds: 300), widget.scrollToBottom);
-    });
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   Timer(const Duration(milliseconds: 300), widget.scrollToBottom);
+    // });
     return Container(
       padding: const EdgeInsets.fromLTRB(10.0, 0, 10.0, 0),
       child: FutureBuilder<Uint8List>(

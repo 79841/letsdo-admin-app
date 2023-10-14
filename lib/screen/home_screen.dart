@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:ksica/config/const.dart';
@@ -30,28 +29,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final storage = const FlutterSecureStorage();
 
-  // late IOWebSocketChannel channel;
-  // bool isConnected = false;
-  // String? token = await storage.read(key: "Authorization");
   late ChatroomWebSocketManager webSocketManager;
-
-  // Future<void> signOut(BuildContext context, VoidCallback onSuccess) async {
-  //   if (!context.mounted) {
-  //     return;
-  //   }
-  //   await HomeScreen.storage.delete(
-  //     key: "Authorization",
-  //   );
-  //   Provider.of<Auth>(context, listen: false).removeToken();
-  //   onSuccess.call();
-  // }
 
   @override
   void dispose() {
     print("home dispose");
-    // channel.sink.close();
-    // isConnected = false;
-    webSocketManager.closeWebSocket();
+    try {
+      webSocketManager.closeWebSocket();
+    } catch (e) {
+      print("channel has not bee initialized");
+    }
+
     super.dispose();
   }
 

@@ -70,7 +70,7 @@ Future<dynamic> getClients() async {
     "Accept": "application/json",
     "Authorization": token.toString(),
   };
-  final url = Uri.parse("$SERVER_URL/admin/all/clients");
+  final url = Uri.parse("$SERVER_URL/admin/user/all/clients");
   try {
     final response = await http.get(
       url,
