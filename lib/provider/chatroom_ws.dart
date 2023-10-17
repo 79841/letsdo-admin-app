@@ -28,25 +28,9 @@ class ChatroomWebSocketManager extends ChangeNotifier {
     _channel.sink.close();
     _connectionStatus = WebSocketConnectionStatus.disconnected;
     print("WebSocket disconnected");
-    // notifyListeners();
   }
 
   Future<void> connectWebSocket(String url) async {
-    // if (_connectionStatus == WebSocketConnectionStatus.disconnected) {
-    //   try {
-    //     _connectionStatus = WebSocketConnectionStatus.connecting;
-    //     _channel = IOWebSocketChannel.connect(Uri.parse(url));
-    //     _connectionStatus = WebSocketConnectionStatus.connected;
-    //     print('WebSocket connected');
-    //   } catch (e) {
-    //     print('WebSocket connection failed: $e');
-    //     _connectionStatus = WebSocketConnectionStatus.disconnected;
-    //   }
-    // } else if (_connectionStatus == WebSocketConnectionStatus.connecting) {
-    //   print("WebSocket connecting");
-    // } else {
-    //   print("WebSocket already connected");
-    // }
     if (_connectionStatus == WebSocketConnectionStatus.connected) {
       _channel.sink.close();
       _connectionStatus = WebSocketConnectionStatus.disconnected;
@@ -60,7 +44,5 @@ class ChatroomWebSocketManager extends ChangeNotifier {
       _connectionStatus = WebSocketConnectionStatus.connected;
     }
     print("WebSocket connected");
-
-    // notifyListeners();
   }
 }
