@@ -137,6 +137,7 @@ _Below is an example of how you can install and set up your app._
       </ul>
     </span>
 </div>
+<br clear="left"/>
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <span>
@@ -149,6 +150,7 @@ _Below is an example of how you can install and set up your app._
       </ul>
     </span>
 </div>
+<br clear="left"/>
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <span>
@@ -161,6 +163,7 @@ _Below is an example of how you can install and set up your app._
       </ul>
     </span>
 </div>
+<br clear="left"/>
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left"style="width: 23%;margin-right:1rem;">
     <span>
@@ -170,6 +173,7 @@ _Below is an example of how you can install and set up your app._
       </ul>
     </span>
 </div>
+<br clear="left"/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
