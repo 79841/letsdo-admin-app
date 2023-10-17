@@ -41,12 +41,12 @@ class _CheckListTodayChartState extends State<CheckListTodayChart> {
     );
   }
 
-  Future<List<dynamic>> fetchData() async {
-    List<dynamic> todoList = await fetchTodoList();
-    List<dynamic> checkList = await fetchCheckList();
+  // Future<List<dynamic>> fetchData() async {
+  //   List<dynamic> todoList = await fetchTodoList();
+  //   List<dynamic> checkList = await fetchCheckList();
 
-    return [todoList, checkList];
-  }
+  //   return [todoList, checkList];
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -59,6 +59,7 @@ class _CheckListTodayChartState extends State<CheckListTodayChart> {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(child: CircularProgressIndicator());
         } else if (snapshot.hasError) {
+          print(snapshot.error);
           return Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

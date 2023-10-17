@@ -62,7 +62,8 @@ Future<List<dynamic>> fetchUserCheckList(int userId) async {
 
   final url = Uri.parse("$SERVER_URL/admin/checklist/?user_id=$userId");
   final response = await http.get(url, headers: headers);
-  return json.decode(response.body);
+  final userCheckList = json.decode(response.body);
+  return userCheckList;
 }
 
 Future<List<dynamic>> fetchUserCheckListForPeriod(
