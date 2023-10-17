@@ -125,7 +125,7 @@ _Below is an example of how you can install and set up your app._
 ## Usage
 
 <div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;">
+    <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <span>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Home screen</li>
@@ -138,7 +138,7 @@ _Below is an example of how you can install and set up your app._
     </span>
 </div>
 <div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" align="left" style="width: 23%;">
+    <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <span>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Chat room list screen</li>
@@ -150,7 +150,7 @@ _Below is an example of how you can install and set up your app._
     </span>
 </div>
 <div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 23%;">
+    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <span>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">User information screen</li>
@@ -162,7 +162,7 @@ _Below is an example of how you can install and set up your app._
     </span>
 </div>
 <div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left"style="width: 23%;">
+    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left"style="width: 23%;margin-right:1rem;">
     <span>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Consultation screen</li>
