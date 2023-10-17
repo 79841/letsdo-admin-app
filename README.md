@@ -53,6 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+<a name="about-the-project"></a>
 
 <!-- ![Product Screen Shot][product-screenshot] -->
 <div style="display: flex; justify-content: space-between;">
@@ -79,6 +80,7 @@ The current repository focuses on the admin app component.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
+<a name="build-with"></a>
 
 This section lists major frameworks/systems used to this project.
 
@@ -89,11 +91,13 @@ This section lists major frameworks/systems used to this project.
 <!-- GETTING STARTED -->
 
 ## Getting Started
+<a name="getting-started"></a>
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+<a name="prerequisites"></a>
 
 Install flutter and android studio and create an emulator.
 
@@ -102,6 +106,7 @@ Install flutter and android studio and create an emulator.
 - [Run Emulator][Run-Emulator-url]
 
 ### Installation
+<a name="installation"></a>
 
 _Below is an example of how you can install and set up your app._
 
@@ -123,68 +128,62 @@ _Below is an example of how you can install and set up your app._
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+<a name="usage"></a>
+<table>
+  <tr>
+<td>
+    <img src="./assets/images/readme/product_screen_1.png" align="center" alt="Home screen" style="width: 250px;" />
+</td>
+    <td>
+    <div><li>Home screen</li></div>&nbsp;
+    <div><li>User list viewable</li></div>&nbsp;
+    <div><li>Search and view users</li></div>&nbsp;
+    <div><li>Tap on a user to check the user's checklist status</li></div>&nbsp;
+    <div><li>Clicking the chat icon redirects to the counseling page</li></div>&nbsp;
+    <div><li>New messages displayed if available</li></div>
+</td>
+  </tr>
+  <tr>
+<td>
+    <img src="./assets/images/readme/product_screen_2.png" alt="Chat room list screen" align="left" style="width: 250px;" />
+</td>
+    <td>
+        <div><li>Chat room list screen</li></div>&nbsp;
+        <div><li>Listed in order of most recent messages</li></div>&nbsp;
+        <div><li>Display new message notifications</li></div>&nbsp;
+        <div><li>Show last message</li></div>&nbsp;
+        <div><li>Click to move to consultation page</li></div>&nbsp;
+</td>
 
-<div style="display: flex; margin-bottom: 2rem;">
-    <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <div >
-      <ul style="display:flex;flex-direction:column;">
-        <span>&nbsp;</span><li style="margin-bottom:1rem;">Home screen</li>
-        &nbsp;<li style="margin-bottom:1rem;">User list viewable</li>
-        &nbsp;<li style="margin-bottom:1rem;">Search and view users</li>
-        &nbsp;<li style="margin-bottom:1rem;">Tap on a user to check the user's checklist status</li>
-        &nbsp;<li style="margin-bottom:1rem;">Clicking the chat icon redirects to the counseling page</li>
-        &nbsp;<li style="margin-bottom:1rem;">New messages displayed if available</li>
-      </ul>
-    </div>
-</div>
-<br clear="left"/>
-&nbsp;
-<div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <div>
-      <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">Chat room list screen</li>
-        &nbsp;<li style="margin-bottom:1rem;">Listed in order of most recent messages</li>
-        &nbsp;<li style="margin-bottom:1rem;">Display new message notifications</li>
-        &nbsp;<li style="margin-bottom:1rem;">Show last message</li>
-        &nbsp;<li style="margin-bottom:1rem;">Click to move to consultation page</li>
-      </ul>
-    </div>
-</div>
-<br clear="left"/>
-&nbsp;
+</tr>
+  <tr>
+<td>
+    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 250px;"  />
+</td>
+    <td>
+        <div><li>User information screen</li></div>&nbsp;
+        <div><li>Donut chart of user’s today’s checklist performance</li></div>&nbsp;
+        <div><li>Table showing user checklist performance by week</li></div>&nbsp;
+        <div><li>Display completed checklists</li></div>&nbsp;
+        <div><li>Click the chat icon to go to the consultation screen</li></div>&nbsp;
+</td>
 
-<div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <div>
-      <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">User information screen</li>
-        &nbsp;<li style="margin-bottom:1rem;">Donut chart of user’s today’s checklist performance</li>
-        &nbsp;<li style="margin-bottom:1rem;">Table showing user checklist performance by week</li>
-        &nbsp;<li style="margin-bottom:1rem;">Display completed checklists</li>
-        &nbsp;<li style="margin-bottom:1rem;">Click the chat icon to go to the consultation screen</li>
-      </ul>
-    </div>
-</div>
-<br clear="left"/>
-&nbsp;
+  </tr>
+  <tr>
+<td>
+    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left" style="width: 250px;" />
+</td>
+<td>
+        <div><li>Consultation screen</li></div>&nbsp;
+        <div><li>Consultation with users in real time is possible and the consultation details are saved</li></div>&nbsp;
+</td>
 
-<div style="display:flex; margin-bottom:2rem;">
-    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left"style="width: 23%;margin-right:1rem;">
-    <div>
-      <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">Consultation screen</li>
-        &nbsp;<li style="margin-bottom:1rem;">Consultation with users in real time is possible and the consultation details are saved</li>
-      </ul>
-    </div>
-</div>
-<br clear="left"/>
-&nbsp;
-
+</tr>
+</table>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
-
+<a name="contact"></a>
 `Letmedev` - <79841@naver.com>
 
 Project Link: [https://github.com/skj974600/kscia-admin-app](https://github.com/skj974600/kscia-admin-app)
