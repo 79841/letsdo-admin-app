@@ -126,7 +126,7 @@ _Below is an example of how you can install and set up your app._
 
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <span>
+    <div>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Home screen</li>
         <li style="margin-bottom:1rem;">User list viewable</li>
@@ -135,12 +135,13 @@ _Below is an example of how you can install and set up your app._
         <li style="margin-bottom:1rem;">Clicking the chat icon redirects to the counseling page</li>
         <li style="margin-bottom:1rem;">New messages displayed if available</li>
       </ul>
-    </span>
+    </div>
 </div>
 <br clear="left"/>
+&nbsp;
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <span>
+    <div>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Chat room list screen</li>
         <li style="margin-bottom:1rem;">Listed in order of most recent messages</li>
@@ -148,12 +149,14 @@ _Below is an example of how you can install and set up your app._
         <li style="margin-bottom:1rem;">Show last message</li>
         <li style="margin-bottom:1rem;">Click to move to consultation page</li>
       </ul>
-    </span>
+    </div>
 </div>
 <br clear="left"/>
+&nbsp;
+
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <span>
+    <div>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">User information screen</li>
         <li style="margin-bottom:1rem;">Donut chart of user’s today’s checklist performance</li>
@@ -161,19 +164,22 @@ _Below is an example of how you can install and set up your app._
         <li style="margin-bottom:1rem;">Display completed checklists</li>
         <li style="margin-bottom:1rem;">Click the chat icon to go to the consultation screen</li>
       </ul>
-    </span>
+    </div>
 </div>
 <br clear="left"/>
+&nbsp;
+
 <div style="display:flex; margin-bottom:2rem;">
     <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left"style="width: 23%;margin-right:1rem;">
-    <span>
+    <div>
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Consultation screen</li>
         <li style="margin-bottom:1rem;">Consultation with users in real time is possible and the consultation details are saved</li>
       </ul>
-    </span>
+    </div>
 </div>
 <br clear="left"/>
+&nbsp;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
