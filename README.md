@@ -124,9 +124,9 @@ _Below is an example of how you can install and set up your app._
 
 ## Usage
 
-<div style="display:flex; margin-bottom:2rem;">
+<div style="display: flex; margin-bottom: 2rem;">
     <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
-    <div>
+    <div >
       <ul style="display:flex;flex-direction:column;">
         <li style="margin-bottom:1rem;">Home screen</li>
         <li style="margin-bottom:1rem;">User list viewable</li>
