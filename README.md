@@ -128,12 +128,12 @@ _Below is an example of how you can install and set up your app._
     <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <div >
       <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">Home screen</li>
-        <li style="margin-bottom:1rem;">User list viewable</li>
-        <li style="margin-bottom:1rem;">Search and view users</li>
-        <li style="margin-bottom:1rem;">Tap on a user to check the user's checklist status</li>
-        <li style="margin-bottom:1rem;">Clicking the chat icon redirects to the counseling page</li>
-        <li style="margin-bottom:1rem;">New messages displayed if available</li>
+        &nbsp;<li style="margin-bottom:1rem;">Home screen</li>
+        &nbsp;<li style="margin-bottom:1rem;">User list viewable</li>
+        &nbsp;<li style="margin-bottom:1rem;">Search and view users</li>
+        &nbsp;<li style="margin-bottom:1rem;">Tap on a user to check the user's checklist status</li>
+        &nbsp;<li style="margin-bottom:1rem;">Clicking the chat icon redirects to the counseling page</li>
+        &nbsp;<li style="margin-bottom:1rem;">New messages displayed if available</li>
       </ul>
     </div>
 </div>
@@ -143,11 +143,11 @@ _Below is an example of how you can install and set up your app._
     <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <div>
       <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">Chat room list screen</li>
-        <li style="margin-bottom:1rem;">Listed in order of most recent messages</li>
-        <li style="margin-bottom:1rem;">Display new message notifications</li>
-        <li style="margin-bottom:1rem;">Show last message</li>
-        <li style="margin-bottom:1rem;">Click to move to consultation page</li>
+        &nbsp;<li style="margin-bottom:1rem;">Chat room list screen</li>
+        &nbsp;<li style="margin-bottom:1rem;">Listed in order of most recent messages</li>
+        &nbsp;<li style="margin-bottom:1rem;">Display new message notifications</li>
+        &nbsp;<li style="margin-bottom:1rem;">Show last message</li>
+        &nbsp;<li style="margin-bottom:1rem;">Click to move to consultation page</li>
       </ul>
     </div>
 </div>
@@ -158,11 +158,11 @@ _Below is an example of how you can install and set up your app._
     <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <div>
       <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">User information screen</li>
-        <li style="margin-bottom:1rem;">Donut chart of user’s today’s checklist performance</li>
-        <li style="margin-bottom:1rem;">Table showing user checklist performance by week</li>
-        <li style="margin-bottom:1rem;">Display completed checklists</li>
-        <li style="margin-bottom:1rem;">Click the chat icon to go to the consultation screen</li>
+        &nbsp;<li style="margin-bottom:1rem;">User information screen</li>
+        &nbsp;<li style="margin-bottom:1rem;">Donut chart of user’s today’s checklist performance</li>
+        &nbsp;<li style="margin-bottom:1rem;">Table showing user checklist performance by week</li>
+        &nbsp;<li style="margin-bottom:1rem;">Display completed checklists</li>
+        &nbsp;<li style="margin-bottom:1rem;">Click the chat icon to go to the consultation screen</li>
       </ul>
     </div>
 </div>
@@ -173,8 +173,8 @@ _Below is an example of how you can install and set up your app._
     <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left"style="width: 23%;margin-right:1rem;">
     <div>
       <ul style="display:flex;flex-direction:column;">
-        <li style="margin-bottom:1rem;">Consultation screen</li>
-        <li style="margin-bottom:1rem;">Consultation with users in real time is possible and the consultation details are saved</li>
+        &nbsp;<li style="margin-bottom:1rem;">Consultation screen</li>
+        &nbsp;<li style="margin-bottom:1rem;">Consultation with users in real time is possible and the consultation details are saved</li>
       </ul>
     </div>
 </div>
