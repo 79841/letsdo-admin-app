@@ -128,7 +128,7 @@ _Below is an example of how you can install and set up your app._
     <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" align="left" style="width: 23%;margin-right:1rem;">
     <div >
       <ul style="display:flex;flex-direction:column;">
-        <span>  </span><li style="margin-bottom:1rem;">Home screen</li>
+        <span>&nbsp;</span><li style="margin-bottom:1rem;">Home screen</li>
         &nbsp;<li style="margin-bottom:1rem;">User list viewable</li>
         &nbsp;<li style="margin-bottom:1rem;">Search and view users</li>
         &nbsp;<li style="margin-bottom:1rem;">Tap on a user to check the user's checklist status</li>
