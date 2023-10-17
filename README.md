@@ -132,7 +132,7 @@ _Below is an example of how you can install and set up your app._
 <table>
   <tr>
 <td>
-    <img src="./assets/images/readme/product_screen_1.png" align="center" alt="Home screen" style="width: 250px;" />
+    <img src="./assets/images/readme/product_screen_1.png" align="center" alt="Home screen" style="width: 220px;" />
 </td>
     <td>
     <div><li>Home screen</li></div>&nbsp;
@@ -145,7 +145,7 @@ _Below is an example of how you can install and set up your app._
   </tr>
   <tr>
 <td>
-    <img src="./assets/images/readme/product_screen_2.png" alt="Chat room list screen" align="left" style="width: 250px;" />
+    <img src="./assets/images/readme/product_screen_2.png" alt="Chat room list screen" align="left" style="width: 220px;" />
 </td>
     <td>
         <div><li>Chat room list screen</li></div>&nbsp;
@@ -158,7 +158,7 @@ _Below is an example of how you can install and set up your app._
 </tr>
   <tr>
 <td>
-    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 250px;"  />
+    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" align="left" style="width: 220px;"  />
 </td>
     <td>
         <div><li>User information screen</li></div>&nbsp;
@@ -171,7 +171,7 @@ _Below is an example of how you can install and set up your app._
   </tr>
   <tr>
 <td>
-    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left" style="width: 250px;" />
+    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" align="left" style="width: 220px;" />
 </td>
 <td>
         <div><li>Consultation screen</li></div>&nbsp;
