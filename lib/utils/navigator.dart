@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:ksica/screen/chatroom_list.dart';
 import 'package:ksica/screen/login_register_screen.dart';
@@ -70,12 +72,14 @@ void goToWebSiteNotification() {
   );
 }
 
-void goToProfile(BuildContext context) {
-  Navigator.of(context).push(
-    MaterialPageRoute(
-      builder: (BuildContext context) => const ProfileScreen(),
-    ),
-  );
+void goToProfile(BuildContext context, FutureOr<dynamic> Function() callback) {
+  Navigator.of(context)
+      .push(
+        MaterialPageRoute(
+          builder: (BuildContext context) => const ProfileScreen(),
+        ),
+      )
+      .then((value) => callback());
 }
 
 void goToLogin(BuildContext context) {

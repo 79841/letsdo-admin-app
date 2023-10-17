@@ -58,7 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("home build");
     return MainLayout(
       currentScreen: HOME_SCREEN,
       child: FutureBuilder<dynamic>(
