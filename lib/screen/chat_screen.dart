@@ -97,7 +97,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Expanded(
-                      flex: 7,
                       child: StreamBuilder(
                         stream: channel.stream,
                         builder: (context, snapshot) {
@@ -121,12 +120,10 @@ class _ChatScreenState extends State<ChatScreen> {
                         },
                       ),
                     ),
-                    Expanded(
-                      child: MessageInputBox(
-                        channel: channel,
-                        scrollToBottom: _scrollToBottom,
-                        scrollcontroller: scrollController,
-                      ),
+                    MessageInputBox(
+                      channel: channel,
+                      scrollToBottom: _scrollToBottom,
+                      scrollcontroller: scrollController,
                     ),
                   ],
                 );

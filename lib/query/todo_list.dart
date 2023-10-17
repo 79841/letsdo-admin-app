@@ -11,6 +11,6 @@ Future<List<dynamic>> fetchTodoList() async {
 
   final url = Uri.parse("$SERVER_URL/todolist/");
   final response = await http.get(url, headers: headers);
-  final result = json.decode(response.body);
+  final result = json.decode(utf8.decode(response.bodyBytes));
   return result;
 }

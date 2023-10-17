@@ -56,10 +56,13 @@
 
 <!-- ![Product Screen Shot][product-screenshot] -->
 <div style="display: flex; justify-content: space-between;">
-    <img src="image1_url_here" alt="Image 1 description" style="width: 30%; margin-right: 2%;">
-    <img src="image2_url_here" alt="Image 2 description" style="width: 30%; margin-right: 2%;">
-    <img src="image3_url_here" alt="Image 3 description" style="width: 30%;">
+    <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" style="width: 23%; margin-right: 2%;">
+    <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" style="width: 23%; margin-right: 2%;">
+    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" style="width: 23%; margin-right: 2%;">
+    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" style="width: 23%;">
 </div>
+
+&nbsp;
 
 While there are websites dedicated to individuals with spinal cord injuries, there seemed to be a noticeable absence of mobile applications catering to their specific needs. Recognizing the physical challenges these individuals face, we believed that an easily accessible and user-friendly app was essential. Our goal was to provide on-the-go support and help foster a sense of community. Thus, we embarked on the development of a "Lifestyle App for Individuals with Spinal Cord Injuries". This app was crafted using the cross-platform framework, Flutter, ensuring compatibility with both Android and iOS devices. The backend, which provides the API, was developed using FastAPI.
 
@@ -92,29 +95,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Install flutter and android studio and create an emulator.
 
-- bash
-
-  ```sh
-  sudo add-apt-repository ppa:deadsnakes/ppa
-  sudo apt-get update
-  ```
-
-  ```sh
-  sudo apt install python3.10
-  sudo apt-get install mysql-server
-  sudo apt-get install redis-server
-  ```
-
-- mysql
-
-  ```mysql
-  CREATE DATABASE kscia;
-  CREATE USER userid@localhost IDENTIFIED BY 'password';
-  GRANT ALL privileges ON kscia.* TO userid@locahost IDENTIFIED BY 'password';
-  FLUSH privileges;
-  ```
+- [Flutter Install][Flutter-Install-url]
+- [Android Studio Intall][Android-Studio-Install-url]
+- [Run Emulator][Run-Emulator-url]
 
 ### Installation
 
@@ -126,31 +111,11 @@ _Below is an example of how you can install and set up your app._
    git clone https://github.com/skj974600/kscia-admin-app.git
    ```
 
-2. Start virtual environment
+2. Install packages and run
 
    ```sh
-   python3.10 -m venv .venv
-   source .venv/bin/activate
-   ```
-
-3. Install PIP packages
-
-   ```sh
-   pip intall -r requirements.txt
-   ```
-
-4. Enter your API in `.env`
-
-   ```plain
-   DATABASE_URL=mysql+pymysql://userid:password@127.0.0.1:3306/kscia?charset=utf8
-   ASYNC_DATABASE_URL=mysql+aiomysql://userid:password@127.0.0.1:3306/kscia?charset=utf8
-   PROFILE_IMAGE_DIR=images/profile
-   ```
-
-5. Start server
-
-   ```sh
-   python main.py
+   flutter pub get
+   flutter run lib/main.dart
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -159,7 +124,52 @@ _Below is an example of how you can install and set up your app._
 
 ## Usage
 
-_Please refer to the [Documentation](https://141.164.51.245:22222/docs)_
+<div style="display: flex; justify-content: flex-start;margin-bottom:2rem;">
+    <img src="./assets/images/readme/product_screen_1.png" alt="Image 1 description" style="width: 23%;">
+    <div>
+      <ul style="display:flex;flex-direction:column;">
+        <li style="margin-bottom:1rem;">Home screen</li>
+        <li style="margin-bottom:1rem;">User list viewable</li>
+        <li style="margin-bottom:1rem;">Search and view users</li>
+        <li style="margin-bottom:1rem;">Tap on a user to check the user's checklist status</li>
+        <li style="margin-bottom:1rem;">Clicking the chat icon redirects to the counseling page</li>
+        <li style="margin-bottom:1rem;">New messages displayed if available</li>
+      </ul>
+    </div>
+</div>
+<div style="display: flex; justify-content: flex-start;margin-bottom:2rem;">
+    <img src="./assets/images/readme/product_screen_2.png" alt="Image 1 description" style="width: 23%;">
+    <div>
+      <ul style="display:flex;flex-direction:column;">
+        <li style="margin-bottom:1rem;">Chat room list screen</li>
+        <li style="margin-bottom:1rem;">Listed in order of most recent messages</li>
+        <li style="margin-bottom:1rem;">Display new message notifications</li>
+        <li style="margin-bottom:1rem;">Show last message</li>
+        <li style="margin-bottom:1rem;">Click to move to consultation page</li>
+      </ul>
+    </div>
+</div>
+<div style="display: flex; justify-content: flex-start;margin-bottom:2rem;">
+    <img src="./assets/images/readme/product_screen_3.png" alt="Image 1 description" style="width: 23%;">
+    <div>
+      <ul style="display:flex;flex-direction:column;">
+        <li style="margin-bottom:1rem;">User information screen</li>
+        <li style="margin-bottom:1rem;">Donut chart of user’s today’s checklist performance</li>
+        <li style="margin-bottom:1rem;">Table showing user checklist performance by week</li>
+        <li style="margin-bottom:1rem;">Display completed checklists</li>
+        <li style="margin-bottom:1rem;">Click the chat icon to go to the consultation screen</li>
+      </ul>
+    </div>
+</div>
+<div style="display: flex; justify-content: flex-start;margin-bottom:2rem;">
+    <img src="./assets/images/readme/product_screen_4.png" alt="Image 1 description" style="width: 23%;">
+    <div>
+      <ul style="display:flex;flex-direction:column;">
+        <li style="margin-bottom:1rem;">Consultation screen</li>
+        <li style="margin-bottom:1rem;">Consultation with users in real time is possible and the consultation details are saved</li>
+      </ul>
+    </div>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,9 +191,9 @@ Project Link: [https://github.com/skj974600/kscia-admin-app](https://github.com/
 [stars-url]: https://github.com/skj974600/kscia-admin-app/stargazers
 [issues-shield]: https://img.shields.io/github/issues/skj974600/kscia-admin-app.svg?style=for-the-badge
 [issues-url]: https://github.com/skj974600/kscia-admin-app/issues
-
-<!-- [linkedin-url]: https://linkedin.com/in/othneildrew -->
-
 [product-screenshot]: images/readme/product_screenshot.png
 [Flutter]: https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white
 [Flutter-url]: https://flutter.dev/
+[Flutter-install-url]: https://docs.flutter.dev/get-started/install
+[Android-Studio-install-url]: https://developer.android.com/studio
+[Run-Emulator-url]: https://developer.android.com/studio/run/emulator?hl=en

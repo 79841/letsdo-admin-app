@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../config/style.dart';
 import '../../utils/navigator.dart';
+import '../../utils/space.dart';
 import '../profile/horizontal_simple_profile.dart';
 
 class MessagePreviewboxStyle {
@@ -10,7 +11,7 @@ class MessagePreviewboxStyle {
   static const double margin = 10.0;
   static const double unreadMessageSignSize = 18.0;
   static const double profileImageSize = 40.0;
-  static const double messageFontSize = 20.0;
+  static const double messageFontSize = 17.0;
   static const FontWeight messageFontWeight = FontWeight.w400;
 }
 
@@ -81,14 +82,11 @@ class MessagePreviewBox extends StatelessWidget {
           children: [
             Row(
               children: [
-                SizedBox(
-                  width: 110.0,
-                  child: SimpleProfile(
-                    client: client,
-                    profileSize: MessagePreviewboxStyle.profileImageSize,
-                  ),
+                SimpleProfile(
+                  client: client,
+                  profileSize: MessagePreviewboxStyle.profileImageSize,
                 ),
-                // wspace(20.0),
+                wspace(20.0),
                 Text(
                   messageContent,
                   style: const TextStyle(

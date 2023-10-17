@@ -88,7 +88,6 @@ class _ChatroomListState extends State<ChatroomList> {
             }
             List<dynamic> clients = snapshot.data![0];
             List<dynamic> chatrooms = snapshot.data![1];
-            print(chatrooms);
             return Consumer<Auth>(
               builder: (context, auth, child) {
                 return Consumer<ChatroomWebSocketManager>(
@@ -185,8 +184,6 @@ class _ChatroomListState extends State<ChatroomList> {
 
                           return timeA != null ? -1 : 1;
                         });
-
-                        print(chatroomInfo);
 
                         return Container(
                           child: Column(
