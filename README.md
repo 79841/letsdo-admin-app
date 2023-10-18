@@ -53,6 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+
 <a name="about-the-project"></a>
 
 <!-- ![Product Screen Shot][product-screenshot] -->
@@ -80,6 +81,7 @@ The current repository focuses on the admin app component.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
+
 <a name="build-with"></a>
 
 This section lists major frameworks/systems used to this project.
@@ -91,12 +93,14 @@ This section lists major frameworks/systems used to this project.
 <!-- GETTING STARTED -->
 
 ## Getting Started
+
 <a name="getting-started"></a>
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 <a name="prerequisites"></a>
 
 Install flutter and android studio and create an emulator.
@@ -106,6 +110,7 @@ Install flutter and android studio and create an emulator.
 - [Run Emulator][Run-Emulator-url]
 
 ### Installation
+
 <a name="installation"></a>
 
 _Below is an example of how you can install and set up your app._
@@ -116,10 +121,21 @@ _Below is an example of how you can install and set up your app._
    git clone https://github.com/skj974600/kscia-admin-app.git
    ```
 
-2. Install packages and run
+2. Install packages and set api url
 
    ```sh
    flutter pub get
+   ```
+
+   ```dart
+   // ./config/url.dart
+   const SERVER_URL = "http://server.url";
+   const WEBSOCKET_SERVER_URL = "ws://server.url";
+   ```
+
+3. Run app
+
+   ```sh
    flutter run lib/main.dart
    ```
 
@@ -128,7 +144,9 @@ _Below is an example of how you can install and set up your app._
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+
 <a name="usage"></a>
+
 <table>
   <tr>
 <td>
@@ -183,6 +201,7 @@ _Below is an example of how you can install and set up your app._
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
+
 <a name="contact"></a>
 `Letmedev` - <79841@naver.com>
 
