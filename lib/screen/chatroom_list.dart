@@ -7,7 +7,7 @@ import 'package:ksica/provider/chatroom_ws.dart';
 import 'package:ksica/query/chatroom.dart';
 import 'package:provider/provider.dart';
 import '../component/chat/message_preview.dart';
-import '../config.dart';
+import '../config/url.dart';
 import '../provider/auth.dart';
 import '../query/user_info.dart';
 

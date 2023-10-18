@@ -7,12 +7,11 @@ import 'package:ksica/config/style.dart';
 import 'package:ksica/provider/chatroom_ws.dart';
 import 'package:provider/provider.dart';
 import '../Layout/main_layout.dart';
-import '../config.dart';
+import '../config/url.dart';
 import '../provider/auth.dart';
 import '../query/chatroom.dart';
 import '../query/user_info.dart';
 import '../utils/space.dart';
-import 'checklist_screen.dart';
 import '../component/client.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -31,30 +30,28 @@ class _HomeScreenState extends State<HomeScreen> {
 
   late ChatroomWebSocketManager webSocketManager;
 
+  final ScrollController _controller = ScrollController();
+
   @override
   void dispose() {
-    print("home dispose");
+    _controller.dispose();
     try {
       webSocketManager.closeWebSocket();
     } catch (e) {
       print("channel has not bee initialized");
     }
-
     super.dispose();
   }
 
   List<dynamic> unreadMessageCounts = [];
 
-  // void refreshCallback(double prevPosition) async {
-  //   // print(_controller.position.pixels);
-  //   setState(() {});
-  //   // unreadMessageCounts = await getAllUnreadMessageCount();
-  //   print(prevPosition);
-  //   Timer(
-  //     const Duration(milliseconds: 100),
-  //     () => _controller.jumpTo(prevPosition),
-  //   );
-  // }
+  void refreshCallback(double prevPosition) async {
+    setState(() {});
+    Timer(
+      const Duration(milliseconds: 100),
+      () => _controller.jumpTo(prevPosition),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -112,8 +109,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       clients: clients,
                       chatrooms: chatrooms,
                       unreadMessageCounts: unreadMessageCounts,
-                      // scrollController: _controller,
-                      // refreshCallback: refreshCallback,
+                      scrollController: _controller,
+                      refreshCallback: refreshCallback,
                     );
                   },
                 );
@@ -125,17 +122,17 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  void goToCheckList(BuildContext context) {
-    Navigator.of(context)
-        .push(
-      MaterialPageRoute(
-        builder: (BuildContext context) => const CheckListScreen(),
-      ),
-    )
-        .then((value) {
-      setState(() {});
-    });
-  }
+  // void goToCheckList(BuildContext context) {
+  //   Navigator.of(context)
+  //       .push(
+  //     MaterialPageRoute(
+  //       builder: (BuildContext context) => const CheckListScreen(),
+  //     ),
+  //   )
+  //       .then((value) {
+  //     setState(() {});
+  //   });
+  // }
 
   // void goToChat(BuildContext context) async {
   //   Navigator.of(context).push(
@@ -150,14 +147,14 @@ class SearchedClients extends StatefulWidget {
   final List<dynamic> clients;
   final List<dynamic> chatrooms;
   final List<dynamic> unreadMessageCounts;
-  // final ScrollController scrollController;
-  // final void Function(double) refreshCallback;
+  final ScrollController scrollController;
+  final void Function(double) refreshCallback;
   const SearchedClients(
       {required this.clients,
       required this.chatrooms,
       required this.unreadMessageCounts,
-      // required this.scrollController,
-      // required this.refreshCallback,
+      required this.scrollController,
+      required this.refreshCallback,
       super.key});
 
   @override
@@ -165,7 +162,7 @@ class SearchedClients extends StatefulWidget {
 }
 
 class _SearchedClientsState extends State<SearchedClients> {
-  final ScrollController _controller = ScrollController();
+  // final ScrollController _controller = ScrollController();
 
   final TextEditingController searchController = TextEditingController();
   String searchString = "";
@@ -173,21 +170,22 @@ class _SearchedClientsState extends State<SearchedClients> {
   @override
   void dispose() {
     // TODO: implement dispose
-    _controller.dispose();
+    // _controller.dispose();
 
     super.dispose();
   }
 
-  void refreshCallback(double prevPosition) async {
-    // print(_controller.position.pixels);
-    setState(() {});
-    // unreadMessageCounts = await getAllUnreadMessageCount();
-    print(prevPosition);
-    Timer(
-      const Duration(milliseconds: 100),
-      () => _controller.jumpTo(prevPosition),
-    );
-  }
+  // void _refreshCallback(double prevPosition) async {
+  //   // print(_controller.position.pixels);
+  //   // setState(() {});
+  //   // parentRefreshCallback();
+  //   // unreadMessageCounts = await getAllUnreadMessageCount();
+  //   print(prevPosition);
+  //   Timer(
+  //     const Duration(milliseconds: 100),
+  //     () => _controller.jumpTo(prevPosition),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -233,13 +231,13 @@ class _SearchedClientsState extends State<SearchedClients> {
           hspace(40.0),
           Expanded(
             child: SingleChildScrollView(
-              controller: _controller,
+              controller: widget.scrollController,
               child: Clients(
                 clients: filteredClients,
                 chatrooms: widget.chatrooms,
                 unreadMessageCounts: widget.unreadMessageCounts,
-                scrollController: _controller,
-                refreshCallback: refreshCallback,
+                scrollController: widget.scrollController,
+                refreshCallback: widget.refreshCallback,
               ),
             ),
           ),

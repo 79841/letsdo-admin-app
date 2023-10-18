@@ -41,13 +41,6 @@ class _CheckListTodayChartState extends State<CheckListTodayChart> {
     );
   }
 
-  // Future<List<dynamic>> fetchData() async {
-  //   List<dynamic> todoList = await fetchTodoList();
-  //   List<dynamic> checkList = await fetchCheckList();
-
-  //   return [todoList, checkList];
-  // }
-
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

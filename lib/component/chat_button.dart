@@ -5,7 +5,7 @@ import 'package:ksica/config/style.dart';
 import 'package:provider/provider.dart';
 import 'package:web_socket_channel/io.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
-import '../config.dart';
+import '../config/url.dart';
 import '../provider/auth.dart';
 import '../utils/navigator.dart';
 
