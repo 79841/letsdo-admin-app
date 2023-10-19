@@ -1,23 +1,17 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:ksica/screen/chatroom_list.dart';
-import 'package:ksica/screen/login_register_screen.dart';
-import 'package:ksica/screen/user_checklist_screen.dart';
+import 'package:ksica/screens/chatroom_list.dart';
+import 'package:ksica/screens/login_register_screen.dart';
+import 'package:ksica/screens/user_checklist_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../screen/chat_screen.dart';
-import '../screen/profile_screen.dart';
+import '../screens/chat_screen.dart';
+import '../screens/profile_screen.dart';
 
 void goToHome(
   BuildContext context,
 ) {
-  // Navigator.of(context).pop();
-  // Navigator.of(context).pushReplacement(
-  //   MaterialPageRoute(
-  //     builder: (context) => const HomeScreen(),
-  //   ),
-  // );
   Navigator.of(context).popUntil((route) => route.isFirst);
 }
 
