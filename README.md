@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/skj974600/kscia-admin-app">
+  <a href="https://github.com/79841/kscia-admin-app">
     <img src="./assets/images/readme/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -17,14 +17,14 @@
   <p align="center">
     Admin App for managing and consulting KSCIA app users 
     <br />
-    <a href="https://github.com/skj974600/kscia-admin-app"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/79841/kscia-admin-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/skj974600/kscia-admin-app">View Demo</a>
+    <a href="https://github.com/79841/kscia-admin-app">View Demo</a>
     ·
-    <a href="https://github.com/skj974600/kscia-admin-app/issues">Report Bug</a>
+    <a href="https://github.com/79841/kscia-admin-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/skj974600/kscia-admin-app/issues">Request Feature</a>
+    <a href="https://github.com/79841/kscia-admin-app/issues">Request Feature</a>
   </p>
 </div>
 
@@ -118,7 +118,7 @@ _Below is an example of how you can install and set up your app._
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/skj974600/kscia-admin-app.git
+   git clone https://github.com/79841/kscia-admin-app.git
    ```
 
 2. Install packages and set api url
@@ -205,20 +205,20 @@ _Below is an example of how you can install and set up your app._
 <a name="contact"></a>
 `Letmedev` - <79841@naver.com>
 
-Project Link: [https://github.com/skj974600/kscia-admin-app](https://github.com/skj974600/kscia-admin-app)
+Project Link: [https://github.com/79841/kscia-admin-app](https://github.com/79841/kscia-admin-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/skj974600/kscia-admin-app.svg?style=for-the-badge
-[contributors-url]: https://github.com/skj974600/kscia-admin-app/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/skj974600/kscia-admin-app.svg?style=for-the-badge
-[forks-url]: https://github.com/skj974600/kscia-admin-app/network/members
-[stars-shield]: https://img.shields.io/github/stars/skj974600/kscia-admin-app.svg?style=for-the-badge
-[stars-url]: https://github.com/skj974600/kscia-admin-app/stargazers
-[issues-shield]: https://img.shields.io/github/issues/skj974600/kscia-admin-app.svg?style=for-the-badge
-[issues-url]: https://github.com/skj974600/kscia-admin-app/issues
+[contributors-shield]: https://img.shields.io/github/contributors/79841/kscia-admin-app.svg?style=for-the-badge
+[contributors-url]: https://github.com/79841/kscia-admin-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/79841/kscia-admin-app.svg?style=for-the-badge
+[forks-url]: https://github.com/79841/kscia-admin-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/79841/kscia-admin-app.svg?style=for-the-badge
+[stars-url]: https://github.com/79841/kscia-admin-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/79841/kscia-admin-app.svg?style=for-the-badge
+[issues-url]: https://github.com/79841/kscia-admin-app/issues
 [product-screenshot]: images/readme/product_screenshot.png
 [Flutter]: https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white
 [Flutter-url]: https://flutter.dev/
